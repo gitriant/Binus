@@ -1,0 +1,44 @@
+.binus-recognition {
+  padding: 4rem 0;
+  text-align: center;
+  grid-column: con-start / con-end;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, min-content);
+
+  & .block-header {
+    margin-bottom: 5rem;
+    color: $color-grey-dark;
+  }
+  & .block-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4rem;
+  }
+
+  & .block-description {
+    font-size: 2em;
+    font-weight: 200;
+  }
+
+  & .binus-recognitions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem 1rem;
+    margin-bottom: 2rem;
+    & li {
+      list-style-type: none;
+      width: 19rem;
+      & img {
+        max-height: 8rem;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(min-content, 60rem)) 1fr;
+  background: #424043;
+  color: $color-primary;
+  padding: 3rem 0;
+
+  &__web-identity {
+    grid-column: 2/3;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    & .footer-address {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+    & .copyright {
+      margin-top: 3rem;
+      font-size: 1rem;
+    }
+  }
+
+  &__social-media {
+    grid-column: 3/4;
+    justify-self: end;
+    display: flex;
+    &-icon svg {
+      height: 2.5rem;
+      width: 2.5rem;
+      fill: #fff;
+      margin-left: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}

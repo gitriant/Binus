@@ -1,0 +1,120 @@
+.carousel {
+  grid-column: full-start / full-end;
+  grid-row: 3/4;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: 1rem;
+  display: grid;
+  & .slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: none;
+    padding: 0 15px;
+    animation: fade 2s ease;
+
+    &.active {
+      display: flex;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  & .container {
+    max-width: 120rem;
+    margin: auto;
+    flex-grow: 1;
+
+    & .caption {
+      color: $color-primary;
+      width: 100%;
+
+      & h1 {
+        font-size: 6rem;
+        color: $color-primary;
+        margin-top: 15rem;
+        text-align: center;
+      }
+      & p {
+        text-align: center;
+      }
+    }
+  }
+
+  & .controls .prev,
+  .controls .next {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    max-width: 120rem;
+    border-radius: 5rem;
+    margin-top: -20px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    // display: none;
+    & svg {
+      fill: #333;
+    }
+  }
+
+  & .controls .prev {
+    left: 10rem;
+    &-icon {
+      height: 2rem;
+      width: 2rem;
+      margin-top: 1rem;
+      fill: #333;
+    }
+  }
+  & .controls .next {
+    right: 10rem;
+    &-icon {
+      margin-top: 1rem;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  & .indicator {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    z-index: 2;
+    transform: translateX(-50%);
+    // display: none;
+    & div {
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.8rem;
+      color: #333;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 25px;
+      margin: 0 3px;
+      border: 1px solid aqua;
+
+      &.active {
+        background-color: #ff5722;
+      }
+    }
+  }
+}

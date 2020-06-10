@@ -1,0 +1,14 @@
+.banner {
+  grid-column: full-start / full-end;
+  grid-row: 7/8;
+  padding: 2rem 0;
+  background: #f6f6f6;
+
+  & img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 72.8rem;
+    height: 9rem;
+  }
+}

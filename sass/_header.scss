@@ -1,0 +1,118 @@
+.binus-header {
+  padding-bottom: 1rem;
+  grid-column: 2 / 12;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 8rem 12rem repeat(7, minmax(min-content, 12rem)) 1fr;
+  &__icon {
+    grid-column: 1 / 2;
+  }
+  &__logo {
+    grid-column: 2 / 3;
+    align-self: end;
+  }
+
+  &__menu {
+    grid-column: 3 / 11;
+    grid-row: 1 /2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: end;
+    position: relative;
+    &--location {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      font-size: 1.4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0.7rem;
+      position: absolute;
+      top: 0;
+      & .label {
+        color: $color-grey-dark;
+        text-transform: uppercase;
+        margin-right: 1rem;
+        font-weight: 800;
+      }
+
+      & .campuses {
+        background-color: $color-grey-light;
+        border-radius: 5rem;
+        & .active {
+          background-color: #e48118;
+          padding: 0.8rem 1rem;
+          border-radius: 5rem;
+          & a {
+            color: $color-primary;
+          }
+        }
+      }
+      & .campus {
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 1rem;
+        margin-right: 3rem;
+        & a {
+          text-decoration: none;
+          color: $color-grey-dark;
+        }
+      }
+    }
+    & .image-em {
+      height: 3rem;
+      width: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 1rem;
+    }
+
+    &--home {
+      grid-column: 1/3;
+      grid-row: 2/2;
+      align-self: end;
+      font-size: 1.2rem;
+      position: relative;
+      top: 0;
+      font-weight: 200;
+      & .menu-link {
+        margin-left: 2rem;
+        display: inline-block;
+        position: relative;
+      }
+      & a {
+        text-decoration: none;
+        color: $color-grey-dark;
+      }
+    }
+
+    &--topnav {
+      grid-column: 1/3;
+      grid-row: 3/4;
+      align-self: end;
+      font-size: 1.4rem;
+      // position: relative;
+      // top: 0.5rem;
+      & .menu-top {
+        margin-left: 1rem;
+        display: inline-block;
+        position: relative;
+        color: $color-grey-dark;
+        font-weight: 400;
+        & .triangle {
+          width: 18px;
+          height: 32px;
+          position: relative;
+          top: 1.1rem;
+          fill: $color-grey-dark;
+        }
+      }
+      & a {
+        color: $color-grey-dark;
+        text-decoration: none;
+        font-weight: 400;
+      }
+    }
+  }
+}

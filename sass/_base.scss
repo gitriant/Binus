@@ -1,0 +1,35 @@
+$color-primary: #fff;
+
+$color-grey-light: #e5e5e5;
+$color-grey-dark: #666;
+
+$font-primary: "Open Sans", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.5;
+  // overflow-x: hidden;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-rows: 4rem 106px min-content 15rem min-content min-content 13rem min-content;
+  grid-template-columns:
+    [full-start]1fr [con-start] repeat(10, minmax(min-content, 12rem)) [con-end]
+    1fr[full-end];
+  // position: relative;
+}
