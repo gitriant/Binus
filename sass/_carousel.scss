@@ -32,66 +32,123 @@
     }
   }
 
-  & .container {
-    max-width: 120rem;
-    margin: auto;
-    flex-grow: 1;
+  // & .container {
+  //   max-width: 1200px;
+  //   margin: auto;
+  //   // flex-grow: 1;
+  //   display: flex;
 
-    & .caption {
+  & .caption {
+    color: $color-primary;
+    width: 100%;
+
+    & h1 {
+      font-size: 6rem;
       color: $color-primary;
-      width: 100%;
+      margin-top: 15rem;
+      text-align: center;
+    }
+    & p {
+      text-align: center;
+    }
+    // }
+  }
+  & .controls {
+    // background-color: red;
 
-      & h1 {
-        font-size: 6rem;
-        color: $color-primary;
-        margin-top: 15rem;
+    & .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      position: relative;
+      // justify-content: space-between;
+      & .prev {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        height: 40px;
+        width: 40px;
+        max-width: 10rem;
+        border-radius: 5rem;
+        margin-top: -20px;
+        background-color: #fff;
         text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &-icon {
+          height: 2rem;
+          width: 2rem;
+          margin-top: 1rem;
+          fill: $color-grey-dark;
+        }
       }
-      & p {
+
+      & .next {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        height: 40px;
+        width: 40px;
+        max-width: 10rem;
+        border-radius: 5rem;
+        margin-top: -20px;
+        background-color: #fff;
         text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        right: 0;
+        &-icon {
+          margin-top: 1rem;
+          height: 2rem;
+          width: 2rem;
+          fill: $color-grey-dark;
+        }
       }
     }
   }
+  // & .controls .prev,
+  // .controls .next {
+  //   position: absolute;
+  //   z-index: 2;
+  //   top: 50%;
+  //   height: 40px;
+  //   width: 40px;
+  //   max-width: 10rem;
+  //   border-radius: 5rem;
+  //   margin-top: -20px;
+  //   background-color: #fff;
+  //   text-align: center;
+  //   line-height: 40px;
+  //   font-size: 20px;
+  //   cursor: pointer;
+  //   transition: all 0.5s ease;
+  //   // display: none;
+  //   & svg {
+  //     fill: #333;
+  //   }
+  // }
 
-  & .controls .prev,
-  .controls .next {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    height: 40px;
-    width: 40px;
-    max-width: 120rem;
-    border-radius: 5rem;
-    margin-top: -20px;
-    background-color: #fff;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    // display: none;
-    & svg {
-      fill: #333;
-    }
-  }
-
-  & .controls .prev {
-    left: 10rem;
-    &-icon {
-      height: 2rem;
-      width: 2rem;
-      margin-top: 1rem;
-      fill: #333;
-    }
-  }
-  & .controls .next {
-    right: 10rem;
-    &-icon {
-      margin-top: 1rem;
-      height: 2rem;
-      width: 2rem;
-    }
-  }
+  // & .controls .prev {
+  //   left: 10rem;
+  //   &-icon {
+  //     height: 2rem;
+  //     width: 2rem;
+  //     margin-top: 1rem;
+  //     fill: #333;
+  //   }
+  // }
+  // & .controls .next {
+  //   right: 10rem;
+  //   &-icon {
+  //     margin-top: 1rem;
+  //     height: 2rem;
+  //     width: 2rem;
+  //   }
+  // }
 
   & .indicator {
     position: absolute;

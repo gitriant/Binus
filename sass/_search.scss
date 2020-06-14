@@ -7,40 +7,44 @@
   grid-template-columns: 1fr repeat(10, minmax(min-content, 12rem)) 1fr;
   justify-items: end;
 
-  &__icon {
-    fill: $color-primary;
-    padding: 1rem;
-    grid-column: 11/12;
-    cursor: pointer;
-    z-index: 2;
-    & svg {
-      height: 2rem;
-      width: 2rem;
-    }
-  }
+  & .container {
+    grid-column: 2/12;
 
-  &__box {
-    position: absolute;
-    top: 0.5rem;
-    right: 7rem;
-
-    &--input {
-      height: 3rem;
-      display: none;
-      z-index: 6;
-      & .slide {
-        display: inline-block;
-        width: 20rem;
+    & .search__icon {
+      fill: $color-primary;
+      padding: 1rem;
+      cursor: pointer;
+      z-index: 2;
+      & svg {
+        height: 2rem;
+        width: 2rem;
       }
     }
-    &--close {
+
+    & .search__box {
       position: absolute;
-      height: 1rem;
-      width: 1rem;
-      top: 1rem;
-      right: 1rem;
-      fill: #333;
-      cursor: pointer;
+      top: 0.5rem;
+      right: 7rem;
+
+      &--input {
+        height: 3rem;
+        display: none;
+        z-index: 6;
+        & .slide {
+          display: inline-block;
+          width: 20rem;
+        }
+      }
+      &--close {
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        top: 1rem;
+        right: 1rem;
+        fill: #333;
+        cursor: pointer;
+        display: none;
+      }
     }
   }
 }
