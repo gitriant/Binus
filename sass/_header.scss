@@ -95,6 +95,10 @@
       font-size: 1.4rem;
       // position: relative;
       // top: 0.5rem;
+
+      // & .topnav-links {
+      // display: none;
+      // }
       & .menu-top {
         margin-left: 1rem;
         display: inline-block;
@@ -114,6 +118,43 @@
         text-decoration: none;
         font-weight: 400;
       }
+
+      & .burger {
+        display: none;
+      }
+
+      & .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px;
+        // display: none;
+      }
     }
+  }
+}
+
+@media only screen and (max-width: $bp-largest) {
+  .binus-header {
+    margin: 0 5px;
+  }
+
+  .binus-header__menu--location {
+    .label {
+      display: none;
+    }
+    .campuses {
+      display: none;
+    }
+  }
+
+  .home-links {
+    display: none;
+  }
+  .topnav-links {
+    display: none;
+  }
+  .burger {
+    display: inline-block !important;
   }
 }

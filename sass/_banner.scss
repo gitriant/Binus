@@ -3,12 +3,22 @@
   grid-row: 7/8;
   padding: 2rem 0;
   background: #f6f6f6;
-
-  & img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 72.8rem;
-    height: 9rem;
+  & .container {
+    margin: auto;
+    & img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 72.8rem;
+      max-height: 9rem;
+    }
+  }
+}
+@media only screen and (max-width: $bp-small) {
+  .banner {
+    & img {
+      width: 50%;
+      height: 50%;
+    }
   }
 }

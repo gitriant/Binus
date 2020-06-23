@@ -19,6 +19,26 @@
     padding: 0 15px;
     animation: fade 2s ease;
 
+    & .container {
+      width: 1200px;
+      margin: auto;
+      & .caption {
+        width: 100%;
+        color: $color-primary;
+        text-align: center;
+        align-items: center;
+        & h1 {
+          font-size: 6rem;
+          margin: auto;
+          margin-top: 200px;
+        }
+        & p {
+          text-align: center;
+        }
+        // }
+      }
+    }
+
     &.active {
       display: flex;
     }
@@ -38,21 +58,6 @@
   //   // flex-grow: 1;
   //   display: flex;
 
-  & .caption {
-    color: $color-primary;
-    width: 100%;
-
-    & h1 {
-      font-size: 6rem;
-      color: $color-primary;
-      margin-top: 15rem;
-      text-align: center;
-    }
-    & p {
-      text-align: center;
-    }
-    // }
-  }
   & .controls {
     // background-color: red;
 
@@ -110,45 +115,6 @@
       }
     }
   }
-  // & .controls .prev,
-  // .controls .next {
-  //   position: absolute;
-  //   z-index: 2;
-  //   top: 50%;
-  //   height: 40px;
-  //   width: 40px;
-  //   max-width: 10rem;
-  //   border-radius: 5rem;
-  //   margin-top: -20px;
-  //   background-color: #fff;
-  //   text-align: center;
-  //   line-height: 40px;
-  //   font-size: 20px;
-  //   cursor: pointer;
-  //   transition: all 0.5s ease;
-  //   // display: none;
-  //   & svg {
-  //     fill: #333;
-  //   }
-  // }
-
-  // & .controls .prev {
-  //   left: 10rem;
-  //   &-icon {
-  //     height: 2rem;
-  //     width: 2rem;
-  //     margin-top: 1rem;
-  //     fill: #333;
-  //   }
-  // }
-  // & .controls .next {
-  //   right: 10rem;
-  //   &-icon {
-  //     margin-top: 1rem;
-  //     height: 2rem;
-  //     width: 2rem;
-  //   }
-  // }
 
   & .indicator {
     position: absolute;
@@ -171,6 +137,22 @@
 
       &.active {
         background-color: #ff5722;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .carousel {
+    height: 40vh;
+    & .slide {
+      & .container {
+        & .caption {
+          & h1 {
+            margin-top: 100px;
+            font-size: 30px;
+          }
+        }
       }
     }
   }
