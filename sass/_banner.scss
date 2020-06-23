@@ -1,7 +1,7 @@
 .banner {
   grid-column: full-start / full-end;
   grid-row: 7/8;
-  padding: 2rem 0;
+  padding: 20px 0;
   background: #f6f6f6;
   & .container {
     margin: auto;
@@ -9,8 +9,8 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      max-width: 72.8rem;
-      max-height: 9rem;
+      max-width: 728px;
+      max-height: 90rem;
     }
   }
 }

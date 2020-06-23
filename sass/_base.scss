@@ -32,12 +32,12 @@ body {
 
 .container-grid {
   display: grid;
-  grid-template-rows: 4rem 106px min-content minmax(min-content, max-content) repeat(
+  grid-template-rows: 40px 106px min-content minmax(min-content, max-content) repeat(
       4,
       min-content
     );
   grid-template-columns:
-    [full-start]1fr [con-start] repeat(10, minmax(min-content, 12rem)) [con-end]
+    [full-start]1fr [con-start] repeat(10, minmax(min-content, 120px)) [con-end]
     1fr[full-end];
   // position: relative;
 }

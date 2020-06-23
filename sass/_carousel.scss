@@ -4,7 +4,7 @@
   height: 80vh;
   overflow: hidden;
   position: relative;
-  margin-top: 1rem;
+  margin-top: 10px;
   display: grid;
   & .slide {
     position: absolute;
@@ -28,7 +28,7 @@
         text-align: center;
         align-items: center;
         & h1 {
-          font-size: 6rem;
+          font-size: 60px;
           margin: auto;
           margin-top: 200px;
         }
@@ -52,29 +52,20 @@
     }
   }
 
-  // & .container {
-  //   max-width: 1200px;
-  //   margin: auto;
-  //   // flex-grow: 1;
-  //   display: flex;
-
   & .controls {
-    // background-color: red;
-
     & .container {
       max-width: 1200px;
       margin: auto;
       display: flex;
       position: relative;
-      // justify-content: space-between;
       & .prev {
         z-index: 2;
         position: absolute;
         top: 50%;
         height: 40px;
         width: 40px;
-        max-width: 10rem;
-        border-radius: 5rem;
+        max-width: 100px;
+        border-radius: 50px;
         margin-top: -20px;
         background-color: #fff;
         text-align: center;
@@ -83,9 +74,9 @@
         cursor: pointer;
         transition: all 0.5s ease;
         &-icon {
-          height: 2rem;
-          width: 2rem;
-          margin-top: 1rem;
+          height: 20px;
+          width: 20px;
+          margin-top: 10px;
           fill: $color-grey-dark;
         }
       }
@@ -96,8 +87,8 @@
         top: 50%;
         height: 40px;
         width: 40px;
-        max-width: 10rem;
-        border-radius: 5rem;
+        max-width: 100px;
+        border-radius: 50px;
         margin-top: -20px;
         background-color: #fff;
         text-align: center;
@@ -107,9 +98,9 @@
         transition: all 0.5s ease;
         right: 0;
         &-icon {
-          margin-top: 1rem;
-          height: 2rem;
-          width: 2rem;
+          margin-top: 10px;
+          height: 20px;
+          width: 20px;
           fill: $color-grey-dark;
         }
       }
@@ -125,8 +116,8 @@
     // display: none;
     & div {
       display: inline-block;
-      width: 0.8rem;
-      height: 0.8rem;
+      width: 8px;
+      height: 8px;
       color: #333;
       background-color: #fff;
       border-radius: 50%;

@@ -1,5 +1,5 @@
 .binus-recognition {
-  padding: 4rem 0;
+  padding: 40px 0;
   text-align: center;
   grid-column: con-start / con-end;
   justify-content: center;
@@ -9,13 +9,13 @@
   grid-template-rows: repeat(2, min-content);
 
   & .block-header {
-    margin-bottom: 5rem;
+    margin-bottom: 50px;
     color: $color-grey-dark;
   }
   & .block-title {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 40px;
   }
 
   & .block-description {
@@ -28,13 +28,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    grid-gap: 2rem 1rem;
-    margin-bottom: 2rem;
+    grid-gap: 20px 10px;
+    margin-bottom: 20px;
     & li {
       list-style-type: none;
-      width: 19rem;
+      width: 190px;
       & img {
-        max-height: 8rem;
+        max-height: 80px;
         max-width: 100%;
         width: auto;
         height: auto;
