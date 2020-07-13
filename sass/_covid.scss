@@ -1,6 +1,7 @@
 .covid-banner {
   background-image: linear-gradient(180deg, #ec3d67 0%, #652fa0 100%);
   grid-column: full-start / full-end;
+  grid-row: 4/5;
 
   & .wrapper {
     max-width: 1200px;

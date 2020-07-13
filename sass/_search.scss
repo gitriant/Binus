@@ -1,12 +1,14 @@
 .search {
-  position: relative;
   grid-column: 1/13;
   grid-row: 1/2;
   background-color: #333;
   display: grid;
   grid-template-columns: 1fr repeat(10, minmax(min-content, 120px)) 1fr;
   justify-items: end;
-
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 31;
   & .container {
     grid-column: 2/12;
 

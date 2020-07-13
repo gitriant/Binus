@@ -4,6 +4,16 @@ const next = document.querySelector(".next");
 const indicator = document.querySelector(".indicator");
 const search = document.querySelector(".search__icon");
 const sbox = document.querySelector(".search__box--input");
+const burger = document.querySelector(".burger");
+const hide = document.querySelector(".binus-header__menu");
+const close = document.querySelector(".menu-icon");
+
+burger.addEventListener("click", function () {
+  hide.classList.toggle("hide");
+});
+close.addEventListener("click", function () {
+  hide.classList.toggle("hide");
+});
 
 let index = 0;
 

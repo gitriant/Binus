@@ -2,10 +2,11 @@
   padding: 40px 0;
   text-align: center;
   grid-column: con-start / con-end;
+  grid-row: 5/6;
   justify-content: center;
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(min-content, 1fr);
   grid-template-rows: repeat(2, min-content);
 
   & .block-header {
@@ -15,11 +16,14 @@
   & .block-title {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 40px;
+    // font-size: 40px;
+    font-size: 25px;
   }
 
   & .block-description {
-    font-size: 2em;
+    font-size: 32px;
+    // font-size: 14px;
+
     font-weight: 200;
   }
 
@@ -33,11 +37,35 @@
     & li {
       list-style-type: none;
       width: 190px;
+      // width: 150px;
+
       & img {
         max-height: 80px;
         max-width: 100%;
+        // max-width: 30%;
         width: auto;
         height: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-smaller) {
+  .binus-recognition {
+    & .block-title {
+      font-size: 40px;
+    }
+
+    & .block-description {
+      font-size: 14px;
+    }
+
+    & .binus-recognitions {
+      & li {
+        width: 190px;
+        & img {
+          max-width: 30%;
+        }
       }
     }
   }
