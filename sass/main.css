@@ -329,15 +329,13 @@ body {
   }
   .binus-header__menu {
     padding-left: 15px;
-    min-width: 300px;
-    height: 200vh;
+    min-width: 350px;
+    height: 100%;
     -ms-grid-column: 6;
     -ms-grid-column-span: 5;
     grid-column: 6/11;
-    min-height: 100%;
     position: fixed;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: scroll;
     justify-items: start;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -374,7 +372,7 @@ body {
     display: block;
     cursor: pointer;
     position: relative;
-    left: 250px;
+    left: 280px;
   }
   .binus-header__menu--location .menu-icon .menu-ic--close {
     height: 25px;

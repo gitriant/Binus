@@ -158,14 +158,14 @@
     }
     &__menu {
       padding-left: 15px;
-      min-width: 300px;
-      height: 200vh;
+      min-width: 350px;
+      height: 100%;
       grid-column: 6/11;
       // position: absolute;
-      min-height: 100%;
+      // top: 40px;
+      // bottom: 0;
       position: fixed;
-      overflow-y: scroll;
-      overflow-x: hidden;
+      overflow: scroll;
 
       justify-items: start;
       align-items: start;
@@ -191,7 +191,7 @@
           display: block;
           cursor: pointer;
           position: relative;
-          left: 250px;
+          left: 280px;
           // padding: 20px;
           & .menu-ic--close {
             height: 25px;
