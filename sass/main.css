@@ -28,6 +28,8 @@ body {
   -ms-grid-columns: [full-start] 1fr [con-start] (minmax(min-content, 120px))[10] [con-end] 1fr [full-end];
       grid-template-columns: [full-start] 1fr [con-start] repeat(10, minmax(-webkit-min-content, 120px)) [con-end] 1fr [full-end];
       grid-template-columns: [full-start] 1fr [con-start] repeat(10, minmax(min-content, 120px)) [con-end] 1fr [full-end];
+  max-width: 1360px;
+  margin: auto;
 }
 
 @media only screen and (max-width: 800px) {
@@ -49,6 +51,8 @@ body {
 }
 
 .search {
+  max-width: 1360px;
+  margin: auto;
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
@@ -471,7 +475,7 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  height: 80vh;
+  height: 800px;
   overflow: hidden;
   position: relative;
   margin-top: 10px;

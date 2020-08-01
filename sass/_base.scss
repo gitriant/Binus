@@ -39,7 +39,8 @@ body {
   grid-template-columns:
     [full-start]1fr [con-start] repeat(10, minmax(min-content, 120px)) [con-end]
     1fr[full-end];
-  // position: relative;
+  max-width: 1360px;
+  margin: auto;
 }
 
 @media only screen and (max-width: $bp-small) {
